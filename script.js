@@ -12,9 +12,9 @@ Dichiariamo chi ha vinto. */
 
 /* fare scegliere all'utente pari o dispari */                  /* FATTOOO */
 /* far inserire all'utente un numero da 1 a 5 */                /* FATTOOOOO */
-/* generiamo un numero random da 1 a 5 per il PC */
-/* sommiamo i due numeri */
-/* capiamo se la somma è pari o dispari */
+/* generiamo un numero random da 1 a 5 per il PC */             /* FATTOOOO */
+/* sommiamo i due numeri */                                     /* FATTOOOOO */
+/* capiamo se la somma è pari o dispari */             
 /* dichiariamo chi ha vinto */
 
 
@@ -34,6 +34,20 @@ else{
 }
 
 let numeroUtente = parseInt(prompt("inserisci un numero da 1 a 5"));
+console.log("l'utente ha scelto: " + numeroUtente)
+
+function randomNumber(variabile){
+   return Math.floor(Math.random()* 5) + 1;
+}
+
+let numeroRandomPc = randomNumber;
+
+console.log("il pc ha generato: " + numeroRandomPc)
+/* let numeroRandomPc = Math.floor(Math.random()* 5) + 1;
+console.log("il pc ha generato: " + numeroRandomPc) */
+
+let somma = numeroRandomPc + numeroUtente;
+console.log("la somma è:" + somma)
 
 
 
