@@ -19,12 +19,14 @@ Dichiariamo chi ha vinto. */
 
 
 
-let pariODispariUtente = prompt("scegli pari o dispai")
 
-/* else{
-    console.log("la scelta non è valida")
-    prompt("scegli pari o dispai")
-} */
+let pariODispariUtente = prompt("scegli pari o dispai")
+const pari = "pari"
+const dispari = "dispari"
+
+for( i = 0; i==pari || i==dispari; i++){
+    let pariODispariUtente = prompt("scegli pari o dispai")
+}
 
 if(pariODispariUtente === "pari"){
     console.log("hai scelto pari")
@@ -33,10 +35,5 @@ else if(pariODispariUtente === "dispari"){
     console.log("hai scelto dispari")
 }
 
-/* while( pariODispariUtente !== "pari" || pariODispariUtente !== "dispari"){
 
-    let pariODispariUtente = prompt("scelta non valida..scegli pari o dispai")
-    console.log("scelta non valida")
-
-} */
 
