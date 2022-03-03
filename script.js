@@ -10,8 +10,8 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
 
-/* fare scegliere all'utente pari o dispari */
-/* far inserire all'utente un numero da 1 a 5 */
+/* fare scegliere all'utente pari o dispari */                  /* FATTOOO */
+/* far inserire all'utente un numero da 1 a 5 */                /* FATTOOOOO */
 /* generiamo un numero random da 1 a 5 per il PC */
 /* sommiamo i due numeri */
 /* capiamo se la somma è pari o dispari */
@@ -20,13 +20,8 @@ Dichiariamo chi ha vinto. */
 
 
 
-let pariODispariUtente = prompt("scegli pari o dispai")
-const pari = "pari"
-const dispari = "dispari"
+let pariODispariUtente = prompt("scegli pari o dispari")
 
-for( i = 0; i==pari || i==dispari; i++){
-    let pariODispariUtente = prompt("scegli pari o dispai")
-}
 
 if(pariODispariUtente === "pari"){
     console.log("hai scelto pari")
@@ -34,6 +29,11 @@ if(pariODispariUtente === "pari"){
 else if(pariODispariUtente === "dispari"){
     console.log("hai scelto dispari")
 }
+else{
+    console.log("scelta non valida.. scelgo io per te pari")
+}
+
+let numeroUtente = parseInt(prompt("inserisci un numero da 1 a 5"));
 
 
 
