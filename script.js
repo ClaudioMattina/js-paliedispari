@@ -17,14 +17,26 @@ Dichiariamo chi ha vinto. */
 /* capiamo se la somma è pari o dispari */
 /* dichiariamo chi ha vinto */
 
+
+
 let pariODispariUtente = prompt("scegli pari o dispai")
+
+/* else{
+    console.log("la scelta non è valida")
+    prompt("scegli pari o dispai")
+} */
+
 if(pariODispariUtente === "pari"){
     console.log("hai scelto pari")
 }
 else if(pariODispariUtente === "dispari"){
     console.log("hai scelto dispari")
 }
-else{
-    console.log("la scelta non è valida")
-    prompt("scegli pari o dispai")
-}
+
+/* while( pariODispariUtente !== "pari" || pariODispariUtente !== "dispari"){
+
+    let pariODispariUtente = prompt("scelta non valida..scegli pari o dispai")
+    console.log("scelta non valida")
+
+} */
+
