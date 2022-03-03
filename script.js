@@ -14,8 +14,8 @@ Dichiariamo chi ha vinto. */
 /* far inserire all'utente un numero da 1 a 5 */                /* FATTOOOOO */
 /* generiamo un numero random da 1 a 5 per il PC */             /* FATTOOOO */
 /* sommiamo i due numeri */                                     /* FATTOOOOO */
-/* capiamo se la somma è pari o dispari */             
-/* dichiariamo chi ha vinto */
+/* capiamo se la somma è pari o dispari */                      /* FATTOOOOOOO */
+/* dichiariamo chi ha vinto */                                  /* OLLèèèèèèè DAJEEEEE */
 
 
 
@@ -36,18 +36,54 @@ else{
 let numeroUtente = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log("l'utente ha scelto: " + numeroUtente)
 
-function randomNumber(variabile){
+
+
+
+/* COME HO FATTO IO (SBAGLIANDO QUALCOSA) */
+/* function randomNumber(variabile){
    return Math.floor(Math.random()* 5) + 1;
 }
+let numeroRandomPc = randomNumber; */
 
-let numeroRandomPc = randomNumber;
 
-console.log("il pc ha generato: " + numeroRandomPc)
-/* let numeroRandomPc = Math.floor(Math.random()* 5) + 1;
-console.log("il pc ha generato: " + numeroRandomPc) */
+
+function randomNumber(minValue, maxValue){
+    return (Math.floor(Math.random() * (( maxValue + 1) -minValue) + minValue));           /* SENZA FUNZIONI */
+                                                                                           /* let numeroRandomPc = Math.floor(Math.random()* 5) + 1;
+                                                                                           console.log("il pc ha generato: " + numeroRandomPc) */
+};
+
+let numeroRandomPc = randomNumber(1, 5);
+
+console.log("il pc ha generato: " + numeroRandomPc);
+
+
+
+
 
 let somma = numeroRandomPc + numeroUtente;
-console.log("la somma è:" + somma)
+console.log("la somma è:" + somma);
+
+
+function isEven (number){
+    if(number % 2 == 0){
+        return true
+    }
+    else{
+        return false
+    }
+};
+console.log(isEven(somma))
+
+if(pariODispariUtente=="pari" && isEven(somma)==true){
+    console.log("ha vinto l'utente")
+}
+else if (pariODispariUtente=="dispari" && isEven(somma)==false){
+    console.log("ha vinto l'utente")
+}
+else{
+    console.log("ha vinto il pc")
+}
 
 
 
